@@ -9,8 +9,8 @@ colorgrad = { workspace = true }
 cosmic-bg-config = { path = "./config" }
 dirs = "5.0.1"
 eyre = "0.6.12"
-fast_image_resize = { version = "4.2.1", features = ["image"] }
-image = { workspace = true, features = ["hdr", "jpeg", "png", "rayon", "webp"] }
+fast_image_resize = { version = "4.2.1", features = ["image"], git = "https://github.com/immemorabilis0/fast_image_resize", branch = "jxl" }
+image = { features = ["hdr", "jpeg", "png", "rayon", "webp"], git = "https://github.com/immemorabilis0/image", branch = "jxl", version = "0.25.2" }
 notify = "6.1.1"
 rand = "0.8"
 ron = { workspace = true }
